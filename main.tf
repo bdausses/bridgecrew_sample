@@ -46,4 +46,5 @@ resource "aws_instance" "ubuntu_sample_node" {
   instance_type = "t2.micro"
   key_name      = "${var.key_name}"
   security_groups = ["bridgecrew-sample-allow-all"]
+  ebs_optimized = true
 }
