@@ -47,4 +47,5 @@ resource "aws_instance" "ubuntu_sample_node" {
   key_name      = "${var.key_name}"
   security_groups = ["bridgecrew-sample-allow-all"]
   ebs_optimized = true
+  monitoring = true
 }
